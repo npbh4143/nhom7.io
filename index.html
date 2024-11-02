@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Nhóm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: slideIn 5s infinite;
+        }
+        @keyframes slideIn {
+            0% { transform: translateX(100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .member {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            animation: slideInItem 0.5s ease forwards;
+            opacity: 0;
+        }
+        @keyframes slideInItem {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .member:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .hover-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.2);
+            transform: translateY(-100%);
+            transition: transform 0.5s ease;
+        }
+        .member:hover .hover-effect {
+            transform: translateY(0);
+        }
+        .icon {
+            margin-right: 10px;
+            color: #00ff7f;
+            transition: transform 0.3s ease;
+        }
+        .member:hover .icon {
+            transform: scale(1.2);
+        }
+        img {
+            width: 100px; /* Kích thước hình ảnh */
+            height: 100px; /* Kích thước hình ảnh */
+            border-radius: 50%; /* Làm tròn hình ảnh */
+            margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+        }
+    </style>
+</head>
+<body>
+    <h1>Thông tin Nhóm</h1>
+    <div class="member">
+        <div class="hover-effect"></div>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462636584_1009733300841884_5119191450716326166_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=mMxu4m3zB8gQ7kNvgFKSuak&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AQCgB_xSYBeq0jhY3uBsPbU&oh=03_Q7cD1QF-PmCLauIpNHPt4vOVDGJZQ59tFIDGdRRdIeq19d_u0w&oe=674D0EBA" alt="Võ Nhật Huy"> <!-- Chèn hình ảnh -->
+        <h2><i class="fas fa-user icon"></i> Võ Nhật Huy</h2>
+        <p>Thông tin về Võ Nhật Huy.</p>
+    </div>
+    <div class="member">
+        <div class="hover-effect"></div>
+        <img src="https://hocacattuong.com/wp-content/uploads/2024/05/truong-ai-my.jpg" alt="Trương Ái My"> <!-- Chèn hình ảnh -->
+        <h2><i class="fas fa-user icon"></i> Trương Ái My</h2>
+        <p>Thông tin về Trương Ái My.</p>
+    </div>
+    <div class="member">
+        <div class="hover-effect"></div>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462538016_934450742075852_8420551008932985743_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=WqS99MBsz0YQ7kNvgGUaGgw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AfRDlRxlOsBzD133bDEeBnK&oh=03_Q7cD1QEjCLl-95N8GcOUMaOdAjnlz69qREqN5yAsp6mYLmWiFQ&oe=674CF8EB" alt="Phan Hoài Phúc An"> <!-- Chèn hình ảnh -->
+        <h2><i class="fas fa-user icon"></i> Phan Hoài Phúc An</h2>
+        <p>Thông tin về Phan Hoài Phúc An.</p>
+    </div>
+    <div class="member">
+        <div class="hover-effect"></div>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462564258_580388904457323_2503465331893126407_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=JKlOjMprRUIQ7kNvgGo45t4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AX078xxiJVFrW-gZKANEn9C&oh=03_Q7cD1QFZX9r3arUdaiB2DFEEwQ_SHCjLmXtYKEQF8ybDMF09Jw&oe=674D0369" alt="Nguyễn Thanh Thư"> <!-- Chèn hình ảnh -->
+        <h2><i class="fas fa-user icon"></i> Nguyễn Thanh Thư</h2>
+        <p>Thông tin về Nguyễn Thanh Thư.</p>
+    </div>
+    <div class="member">
+        <div class="hover-effect"></div>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462549558_523836073949060_6976608634848999818_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=QIIsvGCfpX0Q7kNvgGs029Z&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=Ag4PL26tY61p-_iqe5dj3O1&oh=03_Q7cD1QHXeAMZksPARP5HkNq76rAiefjOzr51wE-QQMWtNtBSfg&oe=674CF6F2" alt="Nguyễn Phan Bảo Hân"> <!-- Chèn hình ảnh -->
+        <h2><i class="fas fa-user icon"></i> Nguyễn Phan Bảo Hân</h2>
+        <p>Thông tin về Nguyễn Phan Bảo Hân.</p>
+    </div>
+</body>
+</html>
