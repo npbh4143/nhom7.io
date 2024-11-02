@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Example</title>
+    <style>
+        
+        .hover-style {
+            background-color: #add8e6; 
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        
+        .hover-style h1 {
+            position: absolute;
+            left: -100%; 
+            top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            white-space: nowrap;
+            transition: all 0.5s ease;
+        }
+
+        
+        .hover-style p {
+            font-size: 14px;
+            margin: 40px 0;
+            color: #333;
+        }
+
+        
+        .hover-style button {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .hover-style button:hover {
+            background-color: #555;
+        }
+
+        
+        .hover-style:hover h1 {
+            left: 10%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-style">
+        <h1>Hover Style #1</h1>
+        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+        <button>Read More</button>
+    </div>
+</body>
+</html>
