@@ -12,6 +12,7 @@
             margin: 0;
             padding: 20px;
             color: #fff;
+            overflow-x: hidden;
         }
         h1 {
             text-align: center;
@@ -72,9 +73,28 @@
             border-radius: 50%; 
             margin-bottom: 10px; 
         }
+        .emoji {
+            font-size: 30px;
+            position: absolute;
+            animation: float 5s infinite;
+            opacity: 0.8;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            50% { transform: translateY(-100px) scale(1.2); opacity: 0.5; }
+            100% { transform: translateY(-200px) scale(0.8); opacity: 0; }
+        }
+        .emoji:nth-child(1) { left: 20%; animation-delay: 0s; }
+        .emoji:nth-child(2) { left: 40%; animation-delay: 1s; }
+        .emoji:nth-child(3) { left: 60%; animation-delay: 2s; }
+        .emoji:nth-child(4) { left: 80%; animation-delay: 3s; }
     </style>
 </head>
 <body>
+    <div class="emoji">✨</div>
+    <div class="emoji">💫</div>
+    <div class="emoji">🎉</div>
+    <div class="emoji">🌟</div>
     <h1>Thông tin Nhóm</h1>
     <div class="member">
         <div class="hover-effect"></div>
@@ -96,17 +116,20 @@
     </div>
     <div class="member">
         <div class="hover-effect"></div>
-        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462538016_934450742075852_8420551008932985743_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=WqS99MBsz0YQ7kNvgGUaGgw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AfRDlRxlOsBzD133bDEeBnK&oh=03_Q7cD1QEjCLl-95N8GcOUMaOdAjnlz69qREqN5yAsp6mYLmWiFQ&oe=674CF8EB" alt="Phan Hoài Phúc An">         <h2><i class="fas fa-user icon"></i> Phan Hoài Phúc An</h2>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462538016_934450742075852_8420551008932985743_n.png?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=WqS99MBsz0YQ7kNvgGUaGgw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AfRDlRxlOsBzD133bDEeBnK&oh=03_Q7cD1QEjCLl-95N8GcOUMaOdAjnlz69qREqN5yAsp6mYLmWiFQ&oe=674CF8EB" alt="Phan Hoài Phúc An">         
+        <h2><i class="fas fa-user icon"></i> Phan Hoài Phúc An</h2>
         <p>Thông tin về Phan Hoài Phúc An.</p>
     </div>
     <div class="member">
         <div class="hover-effect"></div>
-        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462564258_580388904457323_2503465331893126407_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=JKlOjMprRUIQ7kNvgGo45t4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AX078xxiJVFrW-gZKANEn9C&oh=03_Q7cD1QFZX9r3arUdaiB2DFEEwQ_SHCjLmXtYKEQF8ybDMF09Jw&oe=674D0369" alt="Nguyễn Thanh Thư">         <h2><i class="fas fa-user icon"></i> Nguyễn Thanh Thư</h2>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462564258_580388904457323_2503465331893126407_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=JKlOjMprRUIQ7kNvgGo45t4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=AX078xxiJVFrW-gZKANEn9C&oh=03_Q7cD1QFZX9r3arUdaiB2DFEEwQ_SHCjLmXtYKEQF8ybDMF09Jw&oe=674D0369" alt="Nguyễn Thanh Thư">         
+        <h2><i class="fas fa-user icon"></i> Nguyễn Thanh Thư</h2>
         <p>Thông tin về Nguyễn Thanh Thư.</p>
     </div>
     <div class="member">
         <div class="hover-effect"></div>
-        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462549558_523836073949060_6976608634848999818_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=QIIsvGCfpX0Q7kNvgGs029Z&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=Ag4PL26tY61p-_iqe5dj3O1&oh=03_Q7cD1QHXeAMZksPARP5HkNq76rAiefjOzr51wE-QQMWtNtBSfg&oe=674CF6F2" alt="Nguyễn Phan Bảo Hân">         <h2><i class="fas fa-user icon"></i> Nguyễn Phan Bảo Hân</h2>
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462549558_523836073949060_6976608634848999818_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=QIIsvGCfpX0Q7kNvgGs029Z&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=Ag4PL26tY61p-_iqe5dj3O1&oh=03_Q7cD1QHXeAMZksPARP5HkNq76rAiefjOzr51wE-QQMWtNtBSfg&oe=674CF6F2" alt="Nguyễn Phan Bảo Hân">         
+        <h2><i class="fas fa-user icon"></i> Nguyễn Phan Bảo Hân</h2>
         <p>Thông tin về Nguyễn Phan Bảo Hân.</p>
     </div>
 </body>
